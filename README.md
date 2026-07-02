@@ -4,17 +4,15 @@ A front-end landing page for **Clean Air Tech**, a company specialized in reside
 
 ---
 
-## 🔗 Deploy
+## 🔗 Demo
 
-### 🔗 Access the page published here:
-
-👉 https://kelvesmoura.github.io/Landing_Page-Clean_Air_Tech/
+![Clean Air Tech](./public/assets/img/demo/demo.png)
 
 ---
 
 ## Table of Contents
 
-- [🔗 Deploy](#-deploy)
+- [🔗 Demo](#-demo)
 - [Project Overview](#project-overview)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
@@ -204,6 +202,8 @@ The CSS base uses `clamp()` for typography and spacing to achieve fluid scaling 
 No build step required. Install local dependencies and open `index.html` directly or serve it with any static file server:
 
 ```bash
+# Install dependencies (Lucide UMD local)
+npm install
 
 # Serve with Node.js
 npx http-server .
@@ -216,10 +216,10 @@ python3 -m http.server
 
 ## External Dependencies
 
-| Dependency   | Source    | Purpose                                                      |
-| ------------ | --------- | ------------------------------------------------------------ |
-| Lucide       | CDN (kit) | Icon set used across all components                          |
-| Font Awesome | CDN (kit) | Social media icons (Instagram, Facebook, WhatsApp, Envelope) |
+| Dependency   | Source          | Purpose                                                      |
+| ------------ | --------------- | ------------------------------------------------------------ |
+| Lucide       | npm (UMD local) | Icon set used across all components                          |
+| Font Awesome | CDN (kit)       | Social media icons (Instagram, Facebook, WhatsApp, Envelope) |
 
 ---
 

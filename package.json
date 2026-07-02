@@ -1,0 +1,24 @@
+{
+  "name": "landing_page-clean_air_tech",
+  "version": "1.0.0",
+  "description": "A front-end landing page for **Clean Air Tech**, a company specialized in residential and commercial air conditioning in Matão/SP, Brazil. Built with **Vanilla JavaScript** and a fully modular component architecture, the project is data-driven — all page content is configured in a single central file and rendered dynamically through reusable components, with no frameworks or build tools.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KelvesMoura/Landing_Page-Clean_Air_Tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KelvesMoura/Landing_Page-Clean_Air_Tech/issues"
+  },
+  "homepage": "https://github.com/KelvesMoura/Landing_Page-Clean_Air_Tech#readme",
+  "dependencies": {
+    "lucide": "^1.23.0"
+  }
+}
