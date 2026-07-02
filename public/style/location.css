@@ -1,0 +1,154 @@
+#location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--white-color);
+  padding: 5rem 0;
+  gap: 2rem;
+  transform: scale(calc(0.5 + (var(--progress) * 0.5)));
+  opacity: var(--progress);
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+.title-location {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-location h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--dark-blue-color);
+}
+
+.title-location p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  width: 45vw;
+}
+
+.cards-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 90vw;
+  height: auto;
+  gap: 1rem;
+}
+
+.map-side,
+.info-location,
+.cta4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--white-color);
+  box-shadow: 0 1px 7px 0 rgba(0, 24, 51, 0.12);
+  padding: 1.5rem;
+  margin: 1rem;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  color: var(--dark-blue-color);
+}
+
+.map-side {
+  flex: 2;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 0;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map-side .card-location {
+  position: absolute;
+  display: grid;
+  grid-template-areas:
+    "svg info info"
+    "live live live";
+  justify-content: flex-start;
+  width: 98%;
+  border-radius: 0.75rem;
+  background-color: var(--white-color);
+  row-gap: 0.25rem;
+  padding: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 24, 51, 0.12);
+  bottom: 5%;
+}
+
+.map-side .card-location svg {
+  width: 54px;
+  height: auto;
+  grid-area: svg;
+}
+.map-side .card-location div {
+  grid-area: info;
+}
+.map-side .card-location .atendimento {
+  grid-area: live;
+  padding-left: 3.75rem;
+}
+
+.map-side .card-location p {
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.map-side .card-location #status p {
+  font-size: 0.8rem;
+}
+
+.info-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-location .address h3 {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.info-location .address p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--gray-color);
+}
+
+.cta4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-gradient-icon-color);
+  width: 100%;
+  height: 200px;
+  color: var(--white-color);
+}
+
+.cta4 svg {
+  width: 14px;
+  height: auto;
+}
+
+.cta4 button {
+  width: 100%;
+  font-size: 0.875rem;
+}

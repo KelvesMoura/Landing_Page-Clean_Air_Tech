@@ -1,0 +1,43 @@
+.cta3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-gradient-icon-color);
+  color: var(--white-color);
+  margin: 0 5rem 5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 1.25rem;
+  transform: scale(calc(0.5 + (var(--progress) * 0.5)));
+  opacity: var(--progress);
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+.cta3 h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.cta3 p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.benefits-cta3,
+.card-cta3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-cta3 {
+  gap: 0.5rem;
+}
+
+.cta3 div h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}

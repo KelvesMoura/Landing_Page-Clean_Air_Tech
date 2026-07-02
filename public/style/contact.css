@@ -1,0 +1,190 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--bg-body-second-color);
+  padding: 5rem 0;
+  gap: 2rem;
+  transform: scale(calc(0.5 + (var(--progress) * 0.5)));
+  opacity: var(--progress);
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+.title-contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title-contact h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--dark-blue-color);
+}
+
+.title-contact p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  width: 45vw;
+}
+
+.cards-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 90vw;
+  gap: 1rem;
+}
+
+.contact-info,
+.working-time-info,
+.location-qrcode {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--white-color);
+  box-shadow: 0 1px 7px 0 rgba(0, 24, 51, 0.12);
+  padding: 1.5rem;
+  margin: 1rem;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  color: var(--dark-blue-color);
+}
+
+.cards-contact div h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-contact {
+  display: inherit;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+
+.card-contact svg {
+  width: 55px;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.card-contact i {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 55px;
+  border-radius: 0.75rem;
+}
+
+.card-contact div h3,
+.card-contact div h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-contact div p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--gray-color);
+}
+
+.working-time-info div:nth-child(n + 2):not(:last-child) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.working-time-info div p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-top: 20px;
+  color: var(--dark-blue-color);
+}
+
+.working-time-info div .hour {
+  border: 1px solid var(--dark-blue-color);
+  padding: 1px 8px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+
+.working-time-info hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid var(--hr-line-color);
+  opacity: 1;
+}
+
+.working-time-info .card-time {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: var(--bg-card-time);
+  border-radius: 12px;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+
+.working-time-info .card-time div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.working-time-info .card-time div h3 {
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.working-time-info .card-time div p {
+  margin-top: -10px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.location-qrcode {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.cards-contact .location-qrcode p {
+  color: var(--gray-color);
+}
+
+.cards-contact .location-qrcode .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.cards-contact .location-qrcode .address p {
+  color: var(--dark-blue-color);
+  font-weight: 500;
+  font-family: 0.75rem;
+  text-align: center;
+}
+
+.cards-contact .location-qrcode button:nth-of-type(2n) {
+  border: 1px solid var(--dark-blue-color);
+  width: 100%;
+}
