@@ -4,15 +4,17 @@ A front-end landing page for **Clean Air Tech**, a company specialized in reside
 
 ---
 
-## 🔗 Demo
+## 🔗 Deploy
 
-![Clean Air Tech](./public/assets/img/demo/demo.png)
+### 🔗 Access the page published here:
+
+👉 https://kelvesmoura.github.io/Landing_Page-Clean_Air_Tech/
 
 ---
 
 ## Table of Contents
 
-- [🔗 Demo](#-demo)
+- [🔗 Deploy](#deploy)
 - [Project Overview](#project-overview)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
@@ -64,9 +66,6 @@ Landing_Page-Clean_Air_Tech/
 ├── index.html
 ├── README.md
 ├── .gitignore
-├── package.json
-├── node_modules/
-│   └── lucide/
 └── public/
     ├── assets/
     │   ├── favicon/
@@ -216,10 +215,10 @@ python3 -m http.server
 
 ## External Dependencies
 
-| Dependency   | Source          | Purpose                                                      |
-| ------------ | --------------- | ------------------------------------------------------------ |
-| Lucide       | npm (UMD local) | Icon set used across all components                          |
-| Font Awesome | CDN (kit)       | Social media icons (Instagram, Facebook, WhatsApp, Envelope) |
+| Dependency   | Source    | Purpose                                                      |
+| ------------ | --------- | ------------------------------------------------------------ |
+| Lucide       | CDN (kit) | Icon set used across all components                          |
+| Font Awesome | CDN (kit) | Social media icons (Instagram, Facebook, WhatsApp, Envelope) |
 
 ---
 
