@@ -16,127 +16,129 @@ import createMap from "../components/map.js";
 import createSocialMedia from "../components/socialMedia.js";
 import animation from "../scritps/animation.js";
 
-c.benefitsData.forEach((data, i) => benefits(data, i + 1));
+window.addEventListener("DOMContentLoaded", () => {
+  c.benefitsData.forEach((data, i) => benefits(data, i + 1));
 
-c.titleData.forEach((data) => {
-  const { container, items } = data;
+  c.titleData.forEach((data) => {
+    const { container, items } = data;
 
-  const targets = [].concat(container);
+    const targets = [].concat(container);
 
-  targets.forEach((el) => {
-    items.forEach((subEl) => {
-      titleIcon(el, subEl);
+    targets.forEach((el) => {
+      items.forEach((subEl) => {
+        titleIcon(el, subEl);
+      });
     });
   });
-});
 
-c.workingTimeData.forEach((data) => {
-  const { container, days } = data;
+  c.workingTimeData.forEach((data) => {
+    const { container, days } = data;
 
-  const targets = [].concat(container);
+    const targets = [].concat(container);
 
-  targets.forEach((el) => {
-    workingStatus(el, days);
-  });
-});
-
-c.mapData.forEach((data) => {
-  const { container, frame } = data;
-
-  const targets = [].concat(container);
-
-  targets.forEach((el) => {
-    createMap(el, frame);
-  });
-});
-
-c.cardsData.forEach((data) => {
-  const { container, items } = data;
-
-  const targets = [].concat(container);
-
-  targets.forEach((el) => {
-    items.forEach((subEl) => {
-      cards(el, subEl);
+    targets.forEach((el) => {
+      workingStatus(el, days);
     });
   });
-});
 
-c.servicesData.forEach((data) => services(data));
+  c.mapData.forEach((data) => {
+    const { container, frame } = data;
 
-c.equipData.forEach((data) => equipments(data));
+    const targets = [].concat(container);
 
-beforeAfter(c.resultData);
-
-c.partnerData.forEach((data) => {
-  const { container, customers } = data;
-
-  const targets = [].concat(container);
-
-  targets.forEach((el) => {
-    customers.forEach((subEl) => {
-      carousel(el, subEl);
-    });
-    cloneCustomer(el);
-  });
-});
-
-c.qrCodeData.forEach((data) => {
-  const { container, items } = data;
-
-  const targets = [].concat(container);
-
-  targets.forEach((el) => {
-    items.forEach((subEl) => {
-      createQrCode(el, subEl);
+    targets.forEach((el) => {
+      createMap(el, frame);
     });
   });
-});
 
-c.addressData.forEach((data) => inputAddress(data));
+  c.cardsData.forEach((data) => {
+    const { container, items } = data;
 
-c.buttonData.forEach((data) => {
-  const { container, items } = data;
+    const targets = [].concat(container);
 
-  const targets = [].concat(container);
-
-  targets.forEach((el) => {
-    items.forEach((subEl) => {
-      button(el, subEl);
+    targets.forEach((el) => {
+      items.forEach((subEl) => {
+        cards(el, subEl);
+      });
     });
   });
-});
 
-c.infoLive.forEach((container) => liveStatus(container));
+  c.servicesData.forEach((data) => services(data));
 
-c.parkingTitle.forEach((data) => {
-  const { container, items } = data;
+  c.equipData.forEach((data) => equipments(data));
 
-  const targets = [].concat(container);
+  beforeAfter(c.resultData);
 
-  targets.forEach((el) => {
-    items.forEach((subEl) => {
-      titleIcon(el, subEl);
+  c.partnerData.forEach((data) => {
+    const { container, customers } = data;
+
+    const targets = [].concat(container);
+
+    targets.forEach((el) => {
+      customers.forEach((subEl) => {
+        carousel(el, subEl);
+      });
+      cloneCustomer(el);
     });
   });
-});
 
-c.socialMedia.forEach((data) => {
-  const { container, media } = data;
+  c.qrCodeData.forEach((data) => {
+    const { container, items } = data;
 
-  const targets = [].concat(container);
+    const targets = [].concat(container);
 
-  targets.forEach((el) => {
-    media.forEach((subEl) => {
-      createSocialMedia(el, subEl);
+    targets.forEach((el) => {
+      items.forEach((subEl) => {
+        createQrCode(el, subEl);
+      });
     });
   });
+
+  c.addressData.forEach((data) => inputAddress(data));
+
+  c.buttonData.forEach((data) => {
+    const { container, items } = data;
+
+    const targets = [].concat(container);
+
+    targets.forEach((el) => {
+      items.forEach((subEl) => {
+        button(el, subEl);
+      });
+    });
+  });
+
+  c.infoLive.forEach((container) => liveStatus(container));
+
+  c.parkingTitle.forEach((data) => {
+    const { container, items } = data;
+
+    const targets = [].concat(container);
+
+    targets.forEach((el) => {
+      items.forEach((subEl) => {
+        titleIcon(el, subEl);
+      });
+    });
+  });
+
+  c.socialMedia.forEach((data) => {
+    const { container, media } = data;
+
+    const targets = [].concat(container);
+
+    targets.forEach((el) => {
+      media.forEach((subEl) => {
+        createSocialMedia(el, subEl);
+      });
+    });
+  });
+
+  h.footerYear(c.companyName);
+
+  h.infoDev(c.dev);
+
+  animation();
+
+  h.renderIcon();
 });
-
-h.footerYear(c.companyName);
-
-h.infoDev(c.dev);
-
-animation();
-
-h.renderIcon();
