@@ -28,7 +28,7 @@ function equipments(data) {
   div.appendChild(card);
 }
 
-function label(status, content) {
+function label(content) {
   const elements = {
     label: h.cElement("div"),
     i: h.cElement("i"),
